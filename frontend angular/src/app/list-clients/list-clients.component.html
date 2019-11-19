@@ -1,0 +1,24 @@
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Client ID</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Date of  Birth</th>
+                <th>Client Address</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Client of ClientResults ">
+                <td>{{Client.id}}</td>
+                <td>{{Client.FirstName}}</td>
+                <td>{{Client.LastName}}</td>
+                <td>{{Client.Dob}}</td>
+                <td *ngFor="let add of Client.clientObj">{{add.ClientAdd}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

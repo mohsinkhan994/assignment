@@ -1,0 +1,13 @@
+<div>
+    Enter First Name: <input type="text" name="firstname" [(ngModel)]="client.FirstName">
+<br>
+Enter Last Name: <input type="text" name="lastname" [(ngModel)]="client.LastName">
+<br>
+<br>
+<button type="submit" (click)="searchClients()">Search</button>
+</div>
+<br>
+<br>
+<div>
+    <app-list-clients [ClientResults]="ClientResults"></app-list-clients>
+</div>
